@@ -35,7 +35,6 @@ module StripeMock
     include StripeMock::RequestHandlers::InvoiceItems
     include StripeMock::RequestHandlers::Orders
     include StripeMock::RequestHandlers::Plans
-    include StripeMock::RequestHandlers::Products
     include StripeMock::RequestHandlers::Refunds
     include StripeMock::RequestHandlers::Recipients
     include StripeMock::RequestHandlers::Transfers
@@ -44,7 +43,7 @@ module StripeMock
     include StripeMock::RequestHandlers::Payouts
 
     attr_reader :accounts, :balance, :balance_transactions, :bank_tokens, :charges, :coupons, :customers,
-                :disputes, :events, :invoices, :invoice_items, :orders, :plans, :products, :recipients,
+                :disputes, :events, :invoices, :invoice_items, :orders, :plans, :recipients,
                 :refunds, :transfers, :payouts, :subscriptions, :country_spec, :subscriptions_items
 
     attr_accessor :error_queue, :debug, :conversion_rate, :account_balance
@@ -64,7 +63,6 @@ module StripeMock
       @invoice_items = {}
       @orders = {}
       @plans = {}
-      @products = {}
       @recipients = {}
       @refunds = {}
       @transfers = {}
