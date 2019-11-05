@@ -331,6 +331,7 @@ module StripeMock
             quantity: 1
           }]
         },
+        latest_invoice: nil,
         cancel_at_period_end: false,
         canceled_at: nil,
         ended_at: nil,
